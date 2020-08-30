@@ -1,0 +1,31 @@
+I"�<p>2020-08-30</p>
+
+<h3 id="1在github上注册用户并建立一个以usernamegithubio-的仓库">1.在GitHub上注册用户并建立一个以username.github.io 的仓库</h3>
+<p><img src="../img/github.png" alt="Alt" /></p>
+
+<h3 id="2安装git然后打开git-bash拉取刚刚创建的项目">2.安装git，然后打开Git Bash，拉取刚刚创建的项目</h3>
+<p><img src="../img/ssh.png" alt="Alt" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/yueyunsheng/yueyunsheng.github.io.git
+</code></pre></div></div>
+<h3 id="3选择一个主题在此选择jekyll-theme-persephone">3.选择一个主题，在此选择jekyll-theme-persephone</h3>
+<p>其他主题可以到 <em>http://jekyllthemes.org</em>寻找合适的主题。
+下载主题后解压到刚刚git clone的项目的目录下。</p>
+<h3 id="4安装ruby百度ruby安装教程">4.安装Ruby。百度Ruby安装教程。</h3>
+<h3 id="5安装jekyll">5.安装Jekyll</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install jekyll
+</code></pre></div></div>
+<h3 id="6进入刚刚的git-clone的仓库目录下执行">6.进入刚刚的git clone的仓库目录下执行</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle install
+</code></pre></div></div>
+<p>安装bundle</p>
+<h3 id="7启动jekyll服务">7.启动Jekyll服务</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll serve
+</code></pre></div></div>
+<p><em>如果没有启动报错的话，在浏览器输入127.0.0.1:40000 则能访问到页面了</em>
+一般报错是由于配置的原因
+启动不了很有可能是Gemfile引入插件错误或者不存在导致的，需要先要gem install ，然后在Gemfile引入才生效。
+页面加载错误多是_config.yml配置有问题。注意仓库名要是<em>username</em>.github.io</p>
+
+:ET
